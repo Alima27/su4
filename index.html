@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<title>Su4</title>
+	</head>
+	<body>
+		<header>
+			<div class="header1-bg">
+				<div class="wrapper header1">
+					<a href="mailto:su4pto@mail.ru" class="header1__a">
+						<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+						<span class="header__span">
+							su4pto@mail.ru
+						</span>
+					</a>
+					<div class="tel-container">
+						<a href="tel:+996700112233" class="header1__a">
+							<i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+							<span class="header__span">
+								+996 (700) 11-22-33
+							</span>
+						</a>
+					</div>				
+				</div>
+			</div>
+			<div class="header2">
+				<nav class="wrapper navigation">
+					<a href="index.html" class="header__logo"></a>
+					<a href="#!" class="navigation-mobile-collapse"><span class="span"></span></a>
+					<ul class="navigation-menu">
+						<li>
+							<a href="product.html">Продукция</a>
+						</li>
+						<li>
+							<a href="history.html">История</a>
+						</li>
+						<li>
+							<a href="project.html">Проекты</a>
+						</li>
+						<li>
+							<a href="arenda.html">Аренда</a>
+						</li>
+						<li>
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<!-- banner -->
+			<div class="banner">
+				<div class="wrapper banner__info">
+					<h1 class="banner__h1">
+						Пусть Ваши мечты станут нашим проектом
+					</h1>
+					<!-- modal form -->
+					<button type="button" class="btn-color" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+						Получить расчет стоимости
+					</button>
+					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-h5" id="exampleModalLabel">Форма обратной связи</h5>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="mb-3">
+											<label for="name" class="modal-text">Введите Ваше имя</label>
+											<input type="text" class="modal-input" value="" id="name">
+										</div>
+										<div class="mb-3">
+											<label for="tel" class="modal-text">Введите Ваш номер телефона</label>
+											<input type="tel" class="modal-input" value="" id="tel">
+										</div>
+										<div class="mb-3">
+											<label for="email" class="modal-text">E-mail</label>
+											<input type="email" class="modal-input" value="" id="email">
+										</div>
+										<div class="mb-3">
+											<label for="message-text" class="modal-text">Комментарий</label>
+											<textarea class="form-control" id="message-text"></textarea>
+										</div>
+										<button type="button" class="modal-btn">Отправить</button>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="submit" class="btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="banner__widgets">
+					<div>
+						<!-- modal form calc -->
+						<div class="social-menu-btn calculator" data-bs-toggle="modal" data-bs-target="#exampleModal4" ata-bs-whatever="@mdo">
+							<i class="fa fa-calculator fa-5x icon-plus" aria-hidden="true"></i>
+							<span class="hover">Калькулятор по асфальту</span>
+						</div>
+						<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-h5" id="exampleModalLabel4">Калькулятор</h5>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="mb-3">
+												<label for="message-text" class="modal-text">Ширина, м2</label>
+												<input type="number" class="modal-input" value="" id="width-1" placeholder="0">
+											</div>
+											<div class="mb-3">
+												<label for="message-text" class="modal-text">Длина, м2</label>
+												<input type="number" class="modal-input" value="" id="length-1" placeholder="0">
+											</div>
+											<div class="mb-3">
+												<label for="message-text" class="modal-text">Высота, м2</label>
+												<input type="number" min="4" class="modal-input" value="" id="height-1" placeholder="4">
+											</div>
+											<div class="mb-3">
+												<label for="recipient-name" class="modal-text">Стоимость</label>
+												<input type="number" class="modal-input" value="" id="price-1" placeholder="0">
+											</div>
+											<div onClick="multiplication1()" class="modal-btn" > Расчитать</div>
+											<label for="result" class="modal-text total">Итого</label>
+											<input type="text" class="modal-input total" id="result-1" value="" readonly>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<!-- modal form calc -->
+							<div class="social-menu-btn calculator2" data-bs-toggle="modal" data-bs-target="#exampleModal5" ata-bs-whatever="@mdo">
+								<i class="fa fa-calculator fa-5x icon-plus" aria-hidden="true"></i>
+								<span class="hover">Калькулятор расчета</span>
+							</div>
+							<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-h5" id="exampleModalLabel5">Калькулятор</h5>
+										</div>
+										<div class="modal-body">
+											<form>
+												<div class="mb-3">
+													<label for="recipient-name" class="modal-text">Стоимость</label>
+													<input type="number" class="modal-input" value="" id="price" placeholder="10">
+												</div>
+												<div class="mb-3">
+													<label for="message-text" class="modal-text">Ширина, м2</label>
+													<input type="number" class="modal-input" value="" id="width" placeholder="10">
+												</div>
+												<div class="mb-3">
+													<label for="message-text" class="modal-text">Высота, м2</label>
+													<input type="number" class="modal-input" value="" id="height" placeholder="10">
+												</div>
+												<div class="mb-3">
+													<label for="message-text" class="modal-text">Длина, м2</label>
+													<input type="number" class="modal-input" value="" id="length" placeholder="10">
+												</div>
+												<div onClick="multiplication()" class="modal-btn" > Расчитать</div>
+												<label for="result" class="modal-text total">Итого</label>
+												<input type="text" class="modal-input total" id="result" value="" readonly>
+											</form>	
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+										</div>
+									</div>
+								</div>
+							</div>				
+					</div>
+					<div class="social-menu  social-menu-btn ">
+						<div class="btn-sc bars">
+							<i class="fa fa-comments icon-plus fa-5x" aria-hidden="true"></i>
+						</div>
+						<div class="social-btn-list">
+							<a href="https://wa.me/+996704141522" class="btn-sc-item">
+								<i class="fa fa-whatsapp fa-3x social__icon" aria-hidden="true"></i>
+							</a>
+							<a href="https://www.instagram.com/su4.kg/?igshid=YmMyMTA2M2Y=" class="btn-sc-item">
+								<i class="fa fa-instagram fa-3x social__icon" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="particles-block">
+				<div id="particles-js">	</div> 
+				<!-- our product -->
+				<div class=" product">
+					<div class="test-block wrapper">
+					<h2 class="title-h2 white">Наша продукция</h2>
+					<div class="product-container">
+						<!--  -->
+						<div class="spinner-box rotate-block">
+							<a href="products/product5.html" class="css-border">
+								<span class="change-img"> 
+									<span class="configure-border-2 sp-border-2 front-side-img">
+										<span class="configure-core">
+											<span>
+												<span class="icon-crane icon-size"></span>
+												<p class="product__p white">МОНТАЖ МЕТАЛЛОКОНСТРУКЦИЙ</p>									
+											</span>
+										</span>
+									</span> 
+								</span>
+							</a>
+						</div>
+						<!--  -->
+						<div class="spinner-box rotate-block">
+							<a href="products/product6.html" class="css-border">
+								<span class="change-img"> 
+									<span class="configure-border-2 sp-border-2 front-side-img">
+										<span class="configure-core">
+											<span>
+												<span class="icon-wall icon-size"></span>
+												<p class="product__p white">ОБЩЕСТРОИТЕЛЬНЫЕ РАБОТЫ</p>									
+											</span>
+										</span>
+									</span> 
+								</span>							
+							</a>
+						</div>
+						<div class="spinner-box rotate-block">
+							<a href="products/product3.html" class="css-border">
+								<span class="change-img"> 
+									<span class="configure-border-2 sp-border-2 front-side-img">
+										<span class="configure-core">
+											<span>
+												<span class="icon-excavator icon-size"></span>
+												<p class="product__p white">СТРОИТЕЛЬСТВО ДОРОГ</p>									
+											</span>
+										</span>
+									</span> 
+								</span>							
+							</a>
+						</div>
+						<div class="spinner-box rotate-block">
+							<a href="products/product4.html" class="change-img border-change">
+								<span class="configure-border-2 sp-border-2 front-side-img">
+									<span class="configure-core">
+										<span >
+											<span class="icon-beam icon-size"></span>
+											<p class="product__p white">ИЗГОТОВЛЕНИЕ СВАРНЫХ БАЛОК</p>									
+										</span>
+									</span>
+								</span> 
+							</a>
+						</div>
+						<div class="spinner-box rotate-block">
+							<a href="products/product1.html" class="change-img border-change">
+								<span class="configure-border-2 sp-border-2 front-side-img">
+									<span class="configure-core">
+										<span >
+											<div class="icon-protection icon-size"></div>
+											<p class="product__p white">ТВЕРДОТОПЛИВНЫЕ КОТЛЫ</p>									
+										</span>
+									</span>
+								</span> 
+							</a>
+						</div>
+						<div class="spinner-box rotate-block">
+							<a href="products/product2.html" class="change-img border-change">
+								<span class="configure-border-2 sp-border-2 front-side-img">
+									<span class="configure-core">
+										<span >
+											<div class="icon-power icon-size"></div>
+											<p class="product__p white">ПРИГОТОВЛЕНИЕ АСФАЛЬТОБЕТОНА И ХРАНЕНИЕ НЕФТЕБИТУМА</p>									
+										</span>
+									</span>
+								</span> 
+							</a>				
+						</div>
+					</div>					
+					</div>
+				</div>		
+			</div>
+			<!-- process -->
+			<div class="process">
+				<div class="wrapper">
+					<h2 class="title-h2">Компания ЗАО «СУ-4» предоставляет</h2>
+					<p class="text__p center margin">
+						для ВАС полный спектр строительных услуг от проектирования до ввода в эксплуатацию с гарантией качества. Для ВАС экономим деньги при качественном строительстве и благоприятных сроках.
+					</p>
+					<ul class="nav nav-pills mb-6" id="pills-tab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="section1-tab" data-bs-toggle="pill" data-bs-target="#section1" type="button" aria-controls="section1" aria-selected="true">
+								<span class="process__span2">
+									Проектирование
+								</span>
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="section2-tab" data-bs-toggle="pill" data-bs-target="#section2" type="button" aria-controls="section2">
+								<span class="process__span2">
+									Металлокаркасное строительство
+								</span>
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="section3-tab" data-bs-toggle="pill" data-bs-target="#section3" type="button" aria-controls="section3">
+								<span class="process__span2">
+									Дорожное строительство
+								</span>
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="section4-tab" data-bs-toggle="pill" data-bs-target="#section4" type="button" aria-controls="section4">
+								<span class="process__span2">
+								Инженерные сети
+								</span>
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="section5-tab" data-bs-toggle="pill" data-bs-target="#section5" type="button" aria-controls="section5">
+								<span class="process__span2">
+									Ввод в эксплуатацию
+								</span>
+							</button>
+						</li>
+					</ul>
+					<!-- tab -->
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane show1 active" id="section1" role="tabpanel" aria-labelledby="section1-tab">
+							<section role="tabpanel" id="process1" class="process__info">
+								<div class="tabpanel-text">
+									<ul>
+										<li >
+											Вам проект изготовят опытные специалисты имеющие сертификаты и большой опыт работ в сфере проектирования металлоконструкции.
+										</li>
+										<li>
+											На этапе проектирования, Ваше здание уже будет оптимизированно нашими конструкторами, что приведет к уменьшению стоимости объекта.
+										</li>
+										<li>
+											Все этапы строительства будут под строгим контролем авторского надзора
+										</li>
+									</ul>
+									<button type="button" class="btn-color white-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+										Получить расчет стоимости
+									</button>
+								</div>
+								<div class="swiper process-swiper mySwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="process1-1"></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="process1-3"></div>
+										</div>
+									</div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</section>
+						</div>
+						<!-- 2 -->
+						<div class="tab-pane " id="section2" role="tabpanel" aria-labelledby="section2-tab">
+							<section role="tabpanel" id="process1" class="process__info">
+								<div class="tabpanel-text">
+									<ul>
+										<li>
+											Разработка котлована, планирование и уплотнение основания производится механизированным способом, что приводит к уменьшению сроков строительства
+										</li>
+										<li>
+											Устройство фундаментов под металлоконструкции, специально просчитанные нашими проектировщиками и персонально для каждого заказчика, в целях оптимизации стоимости
+										</li>
+										<span id="dots">...</span> <span id="text-more">
+										<li>
+											Изготовление металлоконструкций в собственных цехах изготовления с собственным модернизированным оборудованием, монтаж присмотром инженерно-технических работников прошедшие квалификационный отбор.</span>
+										</li>
+											<li>
+												Устройство ограждающих конструкций зданий и сооружений производится рекомендуемой сендвич панелью на основании технического назначения здания, и совместаных решений проектировщика и заказчика, все так же для оптимизации цены.
+											</li>
+											<li>
+												Полы зданий или сооружений производятся технологичным путем на основание технического назначения с учетом пожеланий заказчика. Что в свою очередь может повлиять на ценообразование и сроки строительства!
+											</li>
+										</span>
+									</ul>
+									<button onclick="myFunction()" id="myBtn">Читать далее</button>
+									<button type="button" class="btn-color white-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+										Получить расчет стоимости
+									</button>
+								</div>
+								<div class="swiper process-swiper mySwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="process2-1"></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="process2-2"></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="process2-3"></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="process2-4"></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="process2-5"></div>
+										</div>
+									</div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</section>
+						</div>
+						<!-- 3 -->
+						<div class="tab-pane " id="section3" role="tabpanel" aria-labelledby="section3-tab">
+							<section role="tabpanel" id="process1" class="process__info">
+								<div class="tabpanel-text">
+									<p class="white-text">
+										Главные преимущества ОАО «СУ-4» в строительстве дорог
+									</p>
+									<ul class="product2-ul">
+										<li class="text__p">
+											Квалифицированные специалисты
+										</li>
+										<li class="text__p">
+											Высокое техническое оснащение
+										</li>
+										<li class="text__p">
+											Четкое соблюдение сроков исполнения задач
+										</li>
+										<li class="text__p">
+											Низкие расценки на весь спектр проводимых работ
+										</li>
+										<li class="text__p">
+											Наличие собственных асфальтобетонных заводов
+										</li>
+									</ul>
+									<button type="button" class="btn-color white-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+										Получить расчет стоимости
+									</button>
+								</div>
+								<div class="swiper process-swiper mySwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="process3-1"></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="process3-4"></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="process3-5"></div>
+										</div>
+									</div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</section>
+						</div>
+						<!-- 4 -->
+						<div class="tab-pane " id="section4" role="tabpanel" aria-labelledby="section4-tab">
+							<section role="tabpanel" id="process1" class="process__info">
+								<div class="tabpanel-text">
+									<button type="button" class="btn-color white-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+										Получить расчет стоимости
+									</button>
+								</div>
+								<div class="swiper process-swiper mySwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="process4-1"></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="process4-2"></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="process4-4"></div>
+										</div>
+									</div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</section>
+						</div>
+						<!-- 5 -->
+						<div class="tab-pane" id="section5" role="tabpanel" aria-labelledby="section5-tab">
+							<section role="tabpanel" id="process1" class="process__info">
+								<div class="tabpanel-text">
+									<ul>
+										<li>
+											Ввод объекта в эксплуатацию производится на основание качественно проделанной работы и ранее продуманных инженерно-технических решений, а так же, на основани своевременно подготовленных документов, подписанных государственным техническим надзором. Что позволяет беспрепятственно подписать «Акт ввода в эксплуатацию»
+										</li>
+									</ul>
+									<button type="button" class="btn-color white-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+										Получить расчет стоимости
+									</button>
+								</div>
+								<div class="swiper process-swiper mySwiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="process5"></div>
+										</div>
+									</div>
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- arenda -->
+			<div class="particles-block">
+				<canvas id="canvas"></canvas>
+				<div class="arenda">
+					<div class="wrapper">
+						<h2 class="title-h2">Аренда</h2>
+						<div class="align-items-start">
+							<div class="">
+								<p class="hmenu">
+									<span></span> 
+									<span></span>
+									<span></span>
+								</p>
+									<nav class="arenda-container">
+										<ul class="nav nav-tabs nav-justified">
+											<li class="" id="v-1-tab">
+												<a href="#v-1" class="text__p active arenda__p" data-bs-toggle="pill" data-bs-target="#v-1" aria-controls="v-1">
+													Все
+												</a>
+											</li>
+											<li class="" id="v-2-tab">
+												<a href="#v-2" class="text__p arenda__p" data-bs-toggle="pill" data-bs-target="#v-2" aria-controls="v-2">
+													Самосвалы
+												</a>
+											</li>
+											<li class="" id="v-3-tab">
+												<a href="#v-3" class="text__p arenda__p" data-bs-toggle="pill" data-bs-target="#v-3" aria-controls="v-3">
+													Тонары
+												</a>
+											</li>
+											<li class="" id="v-4-tab">
+												<a href="#v-4" class="text__p arenda__p" data-bs-toggle="pill" data-bs-target="#v-4" aria-controls="v-4">
+													Фронтальные автопогрузчики
+												</a>
+											</li>
+											<li class="" id="v-5-tab">
+												<a href="#v-5" class="text__p arenda__p"  data-bs-toggle="pill" data-bs-target="#v-5" aria-controls="v-5">
+													Тралы
+												</a>
+											</li>
+											<li class="" id="v-6-tab">
+												<a href="#v-6" class="text__p arenda__p" data-bs-toggle="pill" data-bs-target="#v-6" aria-controls="v-6">
+													Автокраны
+												</a>
+											</li>
+											<li class="" id="v-7-tab">
+												<a href="#v-7" class="text__p arenda__p" data-bs-toggle="pill" data-bs-target="#v-7" aria-controls="v-7">
+													Автобетоносмесители
+												</a>
+											</li>
+											<li class="" id="v-8-tab">
+												<a href="#v-8" class="text__p arenda__p" data-bs-toggle="pill" data-bs-target="#v-8" aria-controls="v-8">
+													Автогрейдер
+												</a>
+											</li>
+											<li class="" id="v-9-tab">
+												<a href="#v-9" class="text__p arenda__p" data-bs-toggle="pill" data-bs-target="#v-9" aria-controls="v-9">
+													Грунтовые катки
+												</a>
+											</li>
+											<li class="" id="v-10-tab">
+												<a href="#v-10" class="text__p arenda__p" data-bs-toggle="pill" data-bs-target="#v-10" aria-controls="v-10">
+													Катки для устройства асфальтного покрытия
+												</a>
+											</li>
+											<li class="" id="v-11-tab">
+												<a href="#v-11" class="text__p arenda__p" data-bs-toggle="pill" data-bs-target="#v-11" aria-controls="v-11">
+													Асфальтоукладчики
+												</a>
+											</li>
+											<li class="" id="v-12-tab">
+												<a href="#v-12" class="text__p arenda__p" data-bs-toggle="pill" data-bs-target="#v-12" aria-controls="v-12">
+												Сидельные тягачи
+												</a>
+											</li>
+											<li class="" id="v-13-tab">
+												<a href="#v-13" class="text__p arenda__p" data-bs-toggle="pill" data-bs-target="#v-13" aria-controls="v-13">
+													Полуприцепы
+												</a>
+											</li>
+											<li class="" id="v-14-tab">
+												<a href="#v-14" class="text__p arenda__p" data-bs-toggle="pill" data-bs-target="#v-14" aria-controls="v-14">
+													Низкорамный полуприцеп
+												</a>
+											</li>
+											<li class="" id="v-15-tab">
+												<a href="#v-15" class="text__p arenda__p" data-bs-toggle="pill" data-bs-target="#v-15" aria-controls="v-15">
+													Экскаватор
+												</a>
+											</li>
+										</ul>
+									</nav>
+						</div>
+							<div class="tab-content" id="v-pills-tabContent">
+								<div class="tab-pane show active" id="v-1" role="tabpanel" aria-labelledby="v-1-tab">
+										<div>
+											<div class="arenda__category">
+												<div class="box w-content">
+													<a href="arenda.html">
+														<img src="assets/img/samos.jpg" alt="">
+														<span class="frame">
+															<h2>САМОСВАЛЫ</h2>
+														</span>				
+													</a>
+												</div>
+												<div class="box w-content">
+													<a href="arenda.html">
+														<img src="assets/img/Tonar-01.png" alt="">
+														<span class="frame">
+															<h2>ТОНАРЫ</h2>
+														</span>				
+													</a>
+												</div>
+												<div class="box w-content">
+													<a href="arenda.html">
+														<img src="assets/img/front.jpg" alt="">
+														<span class="frame">
+															<h2>ФРОНТАЛЬНЫЕ АВТОПОГРУЗЧИКИ</h2>
+														</span>				
+													</a>
+												</div>
+												<div class="box w-content">
+													<a href="arenda.html">
+														<img src="assets/img/gruzoperevozki-tralom.jpg" alt="">
+														<span class="frame">
+															<h2>ТРАЛЫ</h2>
+														</span>				
+													</a>
+												</div>
+												<div class="box w-content">
+													<a href="arenda.html">
+														<img src="assets/img/clincy.png" alt="">
+														<span class="frame">
+															<h2>АВТОКРАНЫ</h2>
+														</span>				
+													</a>
+												</div>
+												<div class="box w-content">
+													<a href="arenda.html">
+														<img src="assets/img/beton.jpg" alt="">
+														<span class="frame">
+															<h2>АВТОБЕТОНОСМЕСИТЕЛИ</h2>
+														</span>				
+													</a>
+												</div>
+												<div class="box w-content">
+													<a href="arenda.html">
+														<img src="assets/img/avtogreyder.png" alt="">
+														<span class="frame">
+															<h2>АВТОГРЕЙДЕР</h2>
+														</span>				
+													</a>
+												</div>
+												<div class="box w-content">
+													<a href="arenda.html">
+														<img src="assets/img/katok1.jpg" alt="">
+														<span class="frame">
+															<h2>ГРУНТОВЫЕ КАТКИ</h2>
+														</span>				
+													</a>
+												</div>
+												<div class="box w-content">
+													<a href="arenda.html">
+														<img src="assets/img/katok2.png" alt="">
+														<span class="frame">
+															<h2>КАТКИ ДЛЯ УСТРОЙСТВА АСФАЛЬТНОГО ПОКРЫТИЯ</h2>
+														</span>				
+													</a>
+												</div>
+												<div class="box w-content">
+													<a href="arenda.html">
+													<img src="assets/img/asfalt.jpg" alt="">
+														<span class="frame">
+															<h2>АСФАЛЬТОУКЛАДЧИКИ</h2>
+														</span>				
+													</a>
+												</div>
+												<div class="box w-content">
+													<a href="arenda.html">
+													<img src="assets/img/tyagochi.jpg" alt="">
+														<span class="frame">
+															<h2>СИДЕЛЬНЫЕ ТЯГАЧИ</h2>
+														</span>				
+													</a>
+												</div>
+												<div class="box w-content">
+													<a href="arenda.html">
+														<img src="assets/img/polupricep.jpeg" alt="">
+														<span class="frame">
+															<h2>ПОЛУПРИЦЕПЫ</h2>
+														</span>				
+													</a>
+												</div>
+												<div class="box w-content">
+													<a href="arenda.html">
+														<img src="assets/img/nizkoramn.jpg" alt="">
+														<span class="frame">
+															<h2>НИЗКОРАМНЫЙ ПОЛУПРИЦЕП</h2>
+														</span>				
+													</a>
+												</div>
+												<div class="box w-content">
+													<a href="arenda.html">
+															<img src="assets/img/exc.png" alt="">
+														<span class="frame">
+															<h2>ЭКСКАВАТОР</h2>
+														</span>				
+													</a>
+												</div>																																															
+											
+											</div>
+											<div class="pagination-wrapper">
+												<svg class="btn btn--prev" height="96" viewBox="0 0 24 24" width="96" xmlns="http://www.w3.org/2000/svg">
+													<path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"/>
+													<path d="M0-.5h24v24H0z" fill="none"/>
+												</svg>
+												<div class="pagination-container">
+													<div class="little-dot  little-dot--first"></div>
+													<div class="little-dot">
+														<div class="big-dot-container">
+															<div class="big-dot"></div>
+														</div>
+													</div>
+													<div class="little-dot  little-dot--last"></div>
+												</div>
+												<svg class="btn btn--next" height="96" viewBox="0 0 24 24" width="96" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"/>
+													<path d="M0-.25h24v24H0z" fill="none"/>
+												</svg>
+											</div>
+										</div>
+								</div>
+								<div class="tab-pane fade" id="v-2" role="tabpanel" aria-labelledby="v-2-tab">
+									<div class="box w-content">
+										<a href="arenda.html">
+											<img src="assets/img/samos.jpg" alt="">
+											<span class="frame">
+												<h2>САМОСВАЛЫ</h2>
+											</span>				
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="v-3" role="tabpanel" aria-labelledby="v-3-tab">
+									<div class="box w-content">
+										<a href="arenda.html">
+											<img src="assets/img/Tonar-01.png" alt="">
+											<span class="frame">
+												<h2>ТОНАРЫ</h2>
+											</span>				
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="v-4" role="tabpanel" aria-labelledby="v-4-tab">
+									<div class="box w-content">
+										<a href="arenda.html">
+											<img src="assets/img/front.jpg" alt="">
+											<span class="frame">
+												<h2>ФРОНТАЛЬНЫЕ АВТОПОГРУЗЧИКИ</h2>
+											</span>				
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="v-5" role="tabpanel" aria-labelledby="v-5-tab">
+									<div class="box w-content">
+										<a href="arenda.html">
+											<img src="assets/img/gruzoperevozki-tralom.jpg" alt="">
+											<span class="frame">
+												<h2>ТРАЛЫ</h2>
+											</span>				
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="v-6" role="tabpanel" aria-labelledby="v-6-tab">
+									<div class="box w-content">
+										<a href="arenda.html">
+											<img src="assets/img/clincy.png" alt="">
+											<span class="frame">
+												<h2>АВТОКРАНЫ</h2>
+											</span>				
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="v-7" role="tabpanel" aria-labelledby="v-7-tab">
+									<div class="box w-content">
+										<a href="arenda.html">
+											<img src="assets/img/beton.jpg" alt="">
+											<span class="frame">
+												<h2>АВТОБЕТОНОСМЕСИТЕЛИ</h2>
+											</span>				
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="v-8" role="tabpanel" aria-labelledby="v-8-tab">
+									<div class="box w-content">
+										<a href="arenda.html">
+											<img src="assets/img/avtogreyder.png" alt="">
+											<span class="frame">
+												<h2>АВТОГРЕЙДЕР</h2>
+											</span>				
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="v-9" role="tabpanel" aria-labelledby="v-9-tab">
+									<div class="box w-content">
+										<a href="arenda.html">
+											<img src="assets/img/katok1.jpg" alt="">
+											<span class="frame">
+												<h2>ГРУНТОВЫЕ КАТКИ</h2>
+											</span>				
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="v-10" role="tabpanel" aria-labelledby="v-10-tab">
+									<div class="box w-content">
+										<a href="arenda.html">
+											<img src="assets/img/katok2.png" alt="">
+											<span class="frame">
+												<h2>КАТКИ ДЛЯ УСТРОЙСТВА АСФАЛЬТНОГО ПОКРЫТИЯ</h2>
+											</span>				
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="v-11" role="tabpanel" aria-labelledby="v-11-tab">
+									<div class="box w-content">
+										<a href="arenda.html">
+										<img src="assets/img/asfalt.jpg" alt="">
+											<span class="frame">
+												<h2>АСФАЛЬТОУКЛАДЧИКИ</h2>
+											</span>				
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="v-12" role="tabpanel" aria-labelledby="v-12-tab">
+									<div class="box w-content">
+										<a href="arenda.html">
+										<img src="assets/img/tyagochi.jpg" alt="">
+											<span class="frame">
+												<h2>СИДЕЛЬНЫЕ ТЯГАЧИ</h2>
+											</span>				
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="v-13" role="tabpanel" aria-labelledby="v-13-tab">
+									<div class="box w-content">
+										<a href="arenda.html">
+											<img src="assets/img/polupricep.jpeg" alt="">
+											<span class="frame">
+												<h2>ПОЛУПРИЦЕПЫ</h2>
+											</span>				
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="v-14" role="tabpanel" aria-labelledby="v-14-tab">
+									<div class="box w-content">
+										<a href="arenda.html">
+											<img src="assets/img/nizkoramn.jpg" alt="">
+											<span class="frame">
+												<h2>НИЗКОРАМНЫЙ ПОЛУПРИЦЕП</h2>
+											</span>				
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="v-15" role="tabpanel" aria-labelledby="v-15-tab">
+									<div class="box w-content">
+										<a href="arenda.html">
+												<img src="assets/img/exc.png" alt="">
+											<span class="frame">
+												<h2>ЭКСКАВАТОР</h2>
+											</span>				
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<!-- history -->
+				<div class="pg-history">
+					<div class="wrapper history">
+						<h2 class="title-h2">ИСТОРИЯ</h2>
+						<div class="d-flex history__container">
+							<div class="history__background"></div>
+							<div class="history__left">
+                <h4 class="title-h4 white">ЗАО «СУ-4»</h4>
+                <p class="text__p white">
+                  Первые объекты были построены строительной организацией в 1952 году. К концу этого года на территории вновь зарождающегося поселка появилось 8 десятиквартирных домов, авторемонтные мастерские, ж/д станция « Заводская» всего 11 объектов...
+                </p>
+                <a href="history.html" class="history__btn">
+                  <button class="btn-white">
+                    Далее
+                  </button>
+                </a>
+              </div>
+						</div> 
+					</div>
+				</div>		
+				<div class="clients">
+					<div class="wrapper">
+						<h2 class="title-h2">Наши клиенты</h2>
+						<div class="clients__info">
+							<div class="img__beeline"></div>
+							<div class="img__o"></div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<a href="#" id="toTop">
+				<svg width="10pt" height="10pt" viewBox="0 0 630 630" version="1.1" xmlns="http://www.w3.org/2000/svg">
+						<g>
+								<g>
+										<path d="M489.229,442.468L254.563,37.135c-3.797-6.592-14.677-6.592-18.453,0L1.443,442.468c-1.92,3.307-1.92,7.36-0.021,10.667
+					c1.92,3.307,5.44,5.333,9.259,5.333h469.333c3.819,0,7.339-2.027,9.259-5.333C491.128,449.849,491.128,445.775,489.229,442.468z"/>
+								</g>
+						</g>
+				</svg>
+		</a>
+			</main>
+			<footer>
+				<div class="footer">
+					<div class=" wrapper">     
+							<div class="row">                       
+									<div class="col-lg-4 col-sm-4 col-xs-12">
+											<div class="single_footer">
+													<h4>Наши контакты</h4>
+													<ul>
+														<li class="footer-li">									
+															<a href="https://goo.gl/maps/B9dixY6XPRCaaSkw9" class="footer__a white">
+																<i class="fa fa-map-marker margin-right fa-lg" aria-hidden="true"></i>
+																Кыргызстан, г. Кара-Балта, 724400<br> ул. Кожомбердиева 2
+															</a>
+														</li>
+														<li class="footer-li">
+															<a href="https://goo.gl/maps/B9dixY6XPRCaaSkw9" class="footer__a">
+																<i class="fa fa-map-marker margin-right fa-lg" aria-hidden="true"></i>
+																г. Кара-Балта, южная промзона
+															</a>															
+														</li>
+															<li class="footer-li">
+																<a href="tel:" class="footer__a white">
+																	<i class="fa fa-phone margin-right fa-lg" aria-hidden="true"></i>
+																	+996 (700) 11-22-33
+																</a>
+															</li>
+															<li class="footer-li">
+																<a href="mailto:su4pto@mail.ru " class="footer__a white">
+																	<i class="fa fa-envelope margin-right fa-lg" aria-hidden="true"></i>
+																	su4pto@mail.ru
+																</a>
+															</li>
+													</ul>
+											</div>
+									</div><!--- END COL --> 
+									<div class="col-md-4 col-sm-4 col-xs-12">
+										<div class="single_footer single_footer_address">
+											<h4>Отдел продаж</h4>
+												<ul>
+													<li class="footer-li">
+														<a href="tel:" class="footer__a white">
+															<i class="fa fa-phone fa-lg margin-right" aria-hidden="true"></i>
+															+996 (700) 11-22-33
+														</a>
+													</li>
+													<li class="footer-li">
+														<a href="tel:" class="footer__a white">
+															<i class="fa fa-phone fa-lg margin-right" aria-hidden="true"></i>
+															+996 (700) 11-22-33
+														</a>
+													</li>
+											</ul>
+										</div>
+									</div><!--- END COL -->
+									<div class="col-md-4 col-sm-4 col-xs-12">
+											<div class="single_footer single_footer_address">
+													<h4>Узнать больше</h4>
+													<div class="signup_form">                           
+															<form action="#" class="subscribe">
+																	<input type="text" class="subscribe__input" placeholder="Введите Ваш Email">
+																	<button type="button" class="subscribe__btn"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+															</form>
+													</div>
+											</div>
+											<div class="social_profile">
+													<ul>
+															<li>
+																<a href="https://wa.me/+996704141522">
+																	<i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i>
+																</a>
+															</li>
+															<li>
+																<a href="https://www.instagram.com/su4.kg/?igshid=YmMyMTA2M2Y=">
+																	<i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+																</a>	
+															</li>
+													</ul>
+											</div>                          
+									</div><!--- END COL -->         
+							</div><!--- END ROW --> 
+							<div class="row">
+									<div class="col-lg-12 col-sm-12 col-xs-12">
+											<p class="copyright">Copyright © 2022 Atlas Soft</p>
+									</div><!--- END COL -->                 
+							</div><!--- END ROW -->                 
+					</div><!--- END CONTAINER -->
+			</div>
+			</footer>
+			<script src="js/index.js"></script>
+			<script src='https://code.jquery.com/jquery-3.6.0.js' integrity='sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=' crossorigin='anonymous'>
+		</script>
+		<!-- navbar -->
+		<script>
+				$('.navigation-mobile-collapse').on('click', function(e) {
+					e.preventDefault();
+					
+					$(this).toggleClass('navigation-mobile-collapse_active');
+					$('.navigation-menu').toggleClass('navigation-menu_show');
+				});
+		</script>
+		<!-- social widgets -->
+		<script>
+			$(document).ready(function(){
+				$('.social-menu-btn').click(function(){
+					$(this).closest('.social-menu').toggleClass('open');
+				});
+			});
+		</script>
+		<!-- slider -->
+		<script>
+			const images = document.querySelectorAll('.main-image');
+			for (let image of images) {
+					image.addEventListener('click', e => {
+							document.location = e.target.dataset.url;
+					})
+			}
+		</script>
+		<!-- fixed header -->
+		<script>
+			var num = 50;
+			$(window).bind('scroll', function () {
+					if ($(window).scrollTop() > num) {
+							$('.header2').addClass('fixed');
+					} else {
+							$('.header2').removeClass('fixed');
+					}
+			});
+		</script>
+		<!-- hmenu -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".hmenu").click(function(){
+						$("nav").toggleClass("show");
+						$(this).toggleClass("showw");       
+				});
+			});
+		</script>
+		<script src="js/particles.js"></script>
+		<script src="js/slider.js"></script>
+		<script src="js/particles-grey.js"></script>
+
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				slidesPerView: 1,
+				spaceBetween: 30,
+				loop: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		</script>
+	</body>
+</html>

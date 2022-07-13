@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<title>Su4</title>
+</head>
+<body>
+	<header>
+		<div class="header1-bg">
+			<div class="wrapper header1">
+				<a href="mailto:su4pto@mail.ru" class="header1__a">
+					<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+					<span class="header__span">
+						su4pto@mail.ru
+					</span>
+				</a>
+				<div>
+					<a href="tel:+996550641716" class="header1__a">
+						<i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+						<span class="header__span">
+							+996 (550) 64-17-16
+						</span>
+					</a>
+					<a href="tel:+996550641716" class="header1__a">
+						<i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+						<span class="header__span">
+							+996 (550) 64-17-16
+						</span>
+					</a>
+				</div>				
+			</div>
+		</div>
+		<div class="header2">
+			<nav class="wrapper navigation">
+				<a href="../index.html" class="header__logo"></a>
+				<a href="#!" class="navigation-mobile-collapse"><span class="span"></span></a>
+				<ul class="navigation-menu">
+					<li>
+						<a href="../product.html">Продукция</a>
+					</li>
+					<li>
+						<a href="../history.html">История</a>
+					</li>
+					<li>
+						<a href="../project.html">Проекты</a>
+					</li>
+					<li>
+						<a href="../arenda.html">Аренда</a>
+					</li>
+					<li>
+						<a href="../contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="banner-page">
+		<div class="wrapper banner-page__info">
+		<h2 class="banner__h2">
+			Твердотопливные котлы
+		</h2>
+		</div>
+	</div>
+	<div class="banner__widgets">
+		<!-- modal form calc -->
+		<div class="social-menu-btn" data-bs-toggle="modal" data-bs-target="#exampleModal4" ata-bs-whatever="@mdo">
+			<img src="../assets/img/icons/calculator-free-icon-font.png" alt="" class="icon-plus">
+		</div>
+		<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-h5" id="exampleModalLabel4">Калькулятор</h5>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="mb-3">
+								<label for="recipient-name" class="modal-text">Стоимость</label>
+								<input type="number" class="modal-input" value="" id="price" placeholder="10">
+							</div>
+							<div class="mb-3">
+								<label for="message-text" class="modal-text">Ширина, м2</label>
+								<input type="number" class="modal-input" value="" id="width" placeholder="10">
+							</div>
+							<div class="mb-3">
+								<label for="message-text" class="modal-text">Высота, м2</label>
+								<input type="number" class="modal-input" value="" id="height" placeholder="10">
+							</div>
+							<input value="Расчитать" onClick="multiplication()" class="modal-btn" >
+							<label for="result" class="modal-text">Итого</label>
+							<input type="text" class="modal-input" id="result" value="">
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="social-menu">
+			<div class="btn-sc social-menu-btn bars">
+				<img src="../assets/img/icons/comments-free-icon-font.png" alt="plus" class="icon-plus">
+			</div>
+			<div class="social-btn-list">
+				<a href="https://wa.me/+996704141522" class="btn-sc-item">
+					<img src="../assets/img/icons/wa-w.png" alt="" class="social__icon">
+				</a>
+				<a href="https://www.instagram.com/su4.kg/?igshid=YmMyMTA2M2Y=" class="btn-sc-item">
+					<img src="../assets/img/icons/inst.png" alt="" class="social__icon">
+				</a>
+				<!-- <a href="#" class="btn-sc-item"><i class="fa fa-vk"></i></a> -->
+			</div>
+		</div>
+	</div>
+	<main class="page-product wrapper">
+		<div class="d-flex product1-info">
+			<div>
+				<p class="text__p">
+					У нас вы можете приобрести или заказать высокоэффективные твердотопливные котлы для домашнего и промышленного использования мощностью от <span class="text__bolder">25</span>  до <span class="text__bolder">1000 кВт</span> .
+				</p>
+				<p class="text__p">
+				<span class="text__bolder">Твердотопливный котел —</span>	 это оборудование, предназначенное для нагрева водяного и воздушного теплоносителя. Применяется в системах с принудительной или естественной циркуляцией теплоносителя, для основного или аварийного отопления в помещениях производственного или общественного назначения, а также для отопления, теплиц, парников, сушки строительных материалов и продуктов сельского хозяйства.
+				</p>
+				<p class="text__p">
+					Отличительной особенностью наших твердотопливных котлов является:
+				</p>
+				<ul class="product__ul">
+					<li class="text__p">
+						Безостановочная работа котла на одной закладке топлива до 24 часов
+					</li>
+					<li class="text__p">
+						Использование в качестве топлива любой твердой органики влажностью до 89%; Минимальный расход топлива (за счет отключения поддува при наборе теплоносителем желаемой температуры)
+					</li>
+					<li class="text__p">
+						Экологичность (в отходящих газах полностью отсутствует угарный газ и углеводороды. Возможность работы на отходах промышленного производства)
+					</li>
+					<li class="text__p">
+						Плавная регулировка выработки тепла (терморегулятор размыкает электрическую цепь нагнетания воздуха, что замедляет горение, и включает надув при падении температуры теплоносителя на 2 С°)
+					</li>
+					<li class="text__p">
+						Безостановочная работа, весь отопительный сезон
+					</li>
+					<li class="text__p">
+						Минимальное обслуживание (от золы отчищается 1-4 раза в неделю, для прочистки дымохода и теплообменника предусмотрены технические люки)
+					</li>
+					<li class="text__p">
+						Долговечность (весь контур котла заполнен водой, включая колосники, что предотвращает прогорание элементов конструкции)
+					</li>
+				</ul>
+				<p class="text__p">
+					Все технические данные котлов вы можете просмотреть <a class="text__p text__bolder" href="../products/product1.pdf"> здесь</a>
+				</p>
+			</div>
+			<div class="product1-1"></div>
+		</div>
+	</main>
+			<footer>
+				<div class="footer">
+					<div class=" wrapper">     
+							<div class="row">                       
+									<div class="col-lg-4 col-sm-4 col-xs-12">
+											<div class="single_footer">
+													<h4>Наши контакты</h4>
+													<ul>
+															<li>									
+																<a href="https://goo.gl/maps/B9dixY6XPRCaaSkw9" class="footer__a white">
+																	<i class="fa fa-map-marker margin-right fa-lg" aria-hidden="true"></i>
+																	Кыргызстан, г. Кара-Балта, 724400<br> ул. Кожомбердиева 2
+																</a>
+															</li>
+															<li>
+																<a href="tel:+996313370091" class="footer__a white">
+																	<i class="fa fa-phone margin-right fa-lg" aria-hidden="true"></i>
+																	+996 (3133) 7-00-91
+																</a>
+															</li>
+															<li>
+																<a href="tel:+996700641716" class="footer__a white">
+																	<i class="fa fa-phone margin-right fa-lg" aria-hidden="true"></i>
+																	+996 (700) 64-17-16
+																</a>
+															</li>
+															<li>
+																<a href="tel:+996550641716" class="footer__a white">
+																	<i class="fa fa-phone margin-right fa-lg" aria-hidden="true"></i>
+																	+996 (550) 64-17-16
+																</a>
+															</li>
+															<li>
+																<a href="mailto:su4pto@mail.ru " class="footer__a white">
+																	<i class="fa fa-envelope margin-right fa-lg" aria-hidden="true"></i>
+																	su4pto@mail.ru
+																</a>
+															</li>
+													</ul>
+											</div>
+									</div><!--- END COL --> 
+									<div class="col-md-4 col-sm-4 col-xs-12">
+											<div class="single_footer single_footer_address">
+													<h4>Доп. информация</h4>
+													<h6>ОТДЕЛ ПТО</h6>
+														<ul>
+															<li>
+																<a href="tel:+996703669935" class="footer__a white">
+																	<i class="fa fa-phone fa-lg margin-right" aria-hidden="true"></i>
+																	+996 (703) 66-99-35
+																</a>
+															</li>
+														</ul>
+													<h6>ГЛАВНЫЙ МЕХАНИК</h6>
+													<ul>
+														<li>
+															<a href="tel:+996701231103" class="footer__a white">
+																<i class="fa fa-phone fa-lg margin-right" aria-hidden="true"></i>
+																+996 (701) 23-11-03
+															</a>
+														</li>
+													</ul>
+											</div>
+									</div><!--- END COL -->
+									<div class="col-md-4 col-sm-4 col-xs-12">
+											<div class="single_footer single_footer_address">
+													<h4>Узнать больше</h4>
+													<div class="signup_form">                           
+															<form action="#" class="subscribe">
+																	<input type="text" class="subscribe__input" placeholder="Введите Ваш Email">
+																	<button type="button" class="subscribe__btn"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+															</form>
+													</div>
+											</div>
+											<div class="social_profile">
+													<ul>
+															<li>
+																<a href="https://wa.me/+996704141522">
+																	<i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i>
+																</a>
+															</li>
+															<li>
+																<a href="https://www.instagram.com/su4.kg/?igshid=YmMyMTA2M2Y=">
+																	<i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+																</a>	
+															</li>
+													</ul>
+											</div>                          
+									</div><!--- END COL -->         
+							</div><!--- END ROW --> 
+							<div class="row">
+									<div class="col-lg-12 col-sm-12 col-xs-12">
+											<p class="copyright">Copyright © 2022 Atlas Soft</p>
+									</div><!--- END COL -->                 
+							</div><!--- END ROW -->                 
+					</div><!--- END CONTAINER -->
+			</div>
+			</footer>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+	<script
+		src='https://code.jquery.com/jquery-3.6.0.js'
+		integrity='sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk='
+		crossorigin='anonymous'>
+	</script>
+	<script>
+		$('.navigation-mobile-collapse').on('click', function(e) {
+			e.preventDefault();
+			
+			$(this).toggleClass('navigation-mobile-collapse_active');
+			$('.navigation-menu').toggleClass('navigation-menu_show');
+		});
+	</script>
+		<script>
+			$(document).ready(function(){
+				$('.social-menu-btn').click(function(){
+					$(this).closest('.social-menu').toggleClass('open');
+				});
+			});
+		</script>
+	<script>
+		function multiplication() { 
+		 var v1 =parseInt(document.getElementById("price").value); 
+		 var v2 = parseInt(document.getElementById("width").value);
+		 var v3 =parseInt(document.getElementById("height").value);
+		 document.getElementById("result").value = v1*v2*v3;
+	 }
+ </script>
+ 	<!-- fixed header -->
+	 <script>
+		var num = 50;
+
+		$(window).bind('scroll', function () {
+				if ($(window).scrollTop() > num) {
+						$('.header2').addClass('fixed');
+				} else {
+						$('.header2').removeClass('fixed');
+				}
+		});
+	</script>
+</body>
+</html>
